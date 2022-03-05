@@ -2,9 +2,21 @@ import "./styles.css";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div className="main">
+      <ComponentePai>
+        <p>SUPIMPA</p>
+        <h1>BACANA</h1>
+        <span>INCRÍVEL</span>
+      </ComponentePai>
     </div>
   );
 }
+const ComponentePai = (props) => {
+  const { children } = props;
+  return (
+    <div>
+      {children}
+      {children}
+    </div>
+  );
+};
