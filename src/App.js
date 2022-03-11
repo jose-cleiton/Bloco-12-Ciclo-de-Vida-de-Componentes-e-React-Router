@@ -9,6 +9,7 @@ import "./styles.css";
 export default class App extends React.Component {
   lidarComClick1 = () => {
     console.log("deu certo 01");
+    console.log(this);
   };
   lidarComClick2 = () => {
     console.log("deu certo 02");
@@ -18,6 +19,7 @@ export default class App extends React.Component {
   };
 
   render() {
+    console.log(this);
     return (
       <>
         <button onClick={this.lidarComClick1}>01 - botão</button>
